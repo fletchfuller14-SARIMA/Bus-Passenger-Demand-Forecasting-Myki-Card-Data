@@ -1,3 +1,18 @@
-# Bus-Passenger-Demand-Forecasting-Myki-Card-Data
+# Bus Passenger Demand Forecasting Using Myki Card Data (SARIMA)
 
-This repository contains the complete workflow for the project Hourly Bus Passenger Demand Forecasting Using SARIMA. The study investigates the use of Seasonal Autoregressive Integrated Moving Average (SARIMA) models to forecast hourly bus passenger demand in Melbourne using aggregated Myki smart-card data provided by the Victorian Department of Transport. Due to data-sharing restrictions, the original dataset cannot be publicly released; however, all analysis code, model configurations, and figure-generation scripts are available to enable full methodological transparency and reproducibility. The repository includes Python scripts and Jupyter notebooks for data preprocessing, model fitting, validation, and visualisation, with outputs corresponding to the results presented in the accompanying thesis. This project aims to provide a clear, reproducible framework for short-term public transport demand forecasting and to support future research and operational applications in data-driven transit planning.
+This repository contains the complete workflow for the study **Hourly Bus Passenger Demand Forecasting Using SARIMA**. The project explores Seasonal Autoregressive Integrated Moving Average (SARIMA) models to forecast hourly bus passenger demand in Melbourne using aggregated Myki smart-card data provided by the Victorian Department of Transport.
+
+> **Data sharing**: Due to data-sharing restrictions, the original Myki dataset **cannot be publicly released**. All analysis code, model configuration, and figure-generation scripts are provided to ensure methodological transparency and reproducibility.
+
+## Contents
+- `notebooks/Typical_Weekday_SARIMA_v6.ipynb` – end-to-end pipeline: frame construction, SARIMA fitting, validation, and heatmap generation  
+- `requirements.txt` / `environment.yml` – Python dependencies  
+- `output/` – folders where figures and frames are saved by the notebook
+
+## Quickstart
+
+**Option A – pip**
+```bash
+python -m venv .venv && source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
+pip install -r requirements.txt
+jupyter notebook notebooks/Typical_Weekday_SARIMA_v6.ipynb
