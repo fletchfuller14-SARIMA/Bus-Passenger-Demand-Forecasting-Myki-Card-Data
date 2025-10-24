@@ -16,3 +16,8 @@ This repository contains the complete workflow for the study **Hourly Bus Passen
 python -m venv .venv && source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
 pip install -r requirements.txt
 jupyter notebook notebooks/Typical_Weekday_SARIMA_v6.ipynb
+
+**Option B – pip**
+conda env create -f environment.yml
+conda activate sarima-bus
+jupyter notebook notebooks/Typical_Weekday_SARIMA_v6.ipynb
