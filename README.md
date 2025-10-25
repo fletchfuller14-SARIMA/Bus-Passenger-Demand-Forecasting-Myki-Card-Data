@@ -9,14 +9,17 @@ This repository contains the complete workflow for the study **Hourly Bus Passen
 - `requirements.txt` / `environment.yml` – Python dependencies  
 - `output/` – folders where figures and frames are saved by the notebook
 
-## Quickstart
+## Quickstart A
 
 **Option A – pip**
+
 ```bash
 python -m venv .venv && source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
 pip install -r requirements.txt
 jupyter notebook notebooks/Typical_Weekday_SARIMA_v6.ipynb
+```
 
+## Quickstart B
 
 **Option B – conda**
 
