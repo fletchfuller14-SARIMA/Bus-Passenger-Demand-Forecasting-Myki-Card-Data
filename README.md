@@ -17,7 +17,12 @@ python -m venv .venv && source .venv/bin/activate   # (Windows: .venv\Scripts\ac
 pip install -r requirements.txt
 jupyter notebook notebooks/Typical_Weekday_SARIMA_v6.ipynb
 
-**Option B – pip**
+
+**Option B – conda**
+
+```bash
 conda env create -f environment.yml
 conda activate sarima-bus
 jupyter notebook notebooks/Typical_Weekday_SARIMA_v6.ipynb
+
+
